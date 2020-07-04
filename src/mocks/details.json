@@ -1,10 +1,12 @@
 {
-  "informations": {
-    "open": true,
-    "verified": true,
-    "smokeArea": true,
-    "wheelchairAccess": true,
-    "climatized": true,
-    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus."
-  }
+  "informations": [
+    {
+      "open": true,
+      "verified": true,
+      "smokeArea": true,
+      "wheelchairAccess": true,
+      "climatized": true,
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus."
+    }
+  ]
 }
