@@ -11,4 +11,8 @@ router.get("/authenticate", User.authenticate);
 router.get("/restaurant", Restaurant.restaurantIndex);
 router.get("/menu", Restaurant.menuIndex);
 
+router.get("/", (req, res) => {
+  return res.send("Bem Vindo ao Reserv");
+});
+
 module.exports = router;
