@@ -6,7 +6,7 @@ class RestaurantController {
   }
 
   async menuIndex(req, res) {
-    return res.send(menu);
+    return res.status(201).send(menu);
   }
 }
 module.exports = new RestaurantController();

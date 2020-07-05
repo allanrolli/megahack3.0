@@ -1,6 +1,6 @@
 class UserController {
   async create(req, res) {
-    return res.status(201).send({ message: "Bem vindo ao Reserv" });
+    return res.status(200).send({ message: "Bem vindo ao Reserv" });
   }
 
   async authenticate(req, res) {

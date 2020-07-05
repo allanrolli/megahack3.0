@@ -1,0 +1,83 @@
+FORMAT: 1A
+HOST: https://megahack3.herokuapp.com
+
+#  MegaHack 3.0
+
+API Description.
+
+# Group API
+
+## About [/]
+
+This project has the purpose of SEBRAE Challenge
+
+# Group User
+
+## Create [/sms]
+
+### Create User [GET]
+
++ Response 200 (application/json)
+    + Attributes (CreatedUser)
+
+## Authenticate [/authenticate]
+
+### Authenticate User [GET]
+
++ Response 200 (application/json)
+    + Attributes (AuthenticateUser)
+
+
+# Group Restaurant
+
+## Restaurant [/restaurant]
+
+### List information about the restaurant [GET]
+
++ Response 201 (application/json)
+    + Attributes (RestaurantInformation)
+
+## Menu [/menu]
+
+### List the menu [GET]
+
++ Response 201 (application/json)
+    + Attributes (MenuInformation)
+
+# Group Park
+
+## Park [/park]
+
+### List information about the park [GET]
+
++ Response 201 (application/json)
+    + Attributes (ParkInformation)
+
+# Group Payment
+
+## Payment [/payment]
+
+### Create payment [GET]
+
++ Response 201 (application/json)
+    + Attributes (Payment)
+
+# Data Structures
+
+## CreatedUser (object)
++ message (string) - user's message is created
+
+## AuthenticateUser (object)
++ message (string) - user's logged in application
+
+## RestaurantInformation (object)
++ informations (object) - all information about the restaurant mocked
+
+## MenuInformation (object)
++ informations (object) - all information about the menu mocked
+
+## ParkInformation (object)
++ informations (object) - all information about the park mocked
+
+## Payment (object)
++ informations (object) - message with successful payment
