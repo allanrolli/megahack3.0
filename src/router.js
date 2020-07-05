@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 const User = require("./controllers/UserController");
 const Restaurant = require("./controllers/RestaurantController");
 const Park = require("./controllers/ParkController");
@@ -16,7 +17,7 @@ router.get("/park", Park.parkIndex);
 router.get("/payment", Payment.create);
 
 router.get("/", (req, res) => {
-  return res.send("Bem Vindo ao Reserv");
+  res.sendFile(path.join(__dirname + "/docs/index.html"));
 });
 
 module.exports = router;
